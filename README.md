@@ -1,0 +1,1 @@
+Blog sobre iniciação científica em inteligência artificial 
