@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Aplicação do algoritmo Minimax Alpa-beta no jogo de Damas"
-date:   2022-01-28 11:33:40 -0300
+date:   2022-03-28 8:22:20 -0300
 categories: IA
 ---
 Diversos problemas podem ser tratados e resolvidos por algoritmos de busca - partimos de um estado inicial e tentamos encontrar uma solução que satisfaça nosso parâmetro percorrendo vários estados intermediários. Em jogos como o jogo dos 15 podemos aplicar uma busca simples para encontrar uma solução, como a busca em profundidade; isso é possível pois o agente tem total controle sobre suas ações e consequências, portanto é capaz de percorrer todos os estados possíveis do jogo. 
