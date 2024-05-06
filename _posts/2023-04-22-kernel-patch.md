@@ -1,7 +1,6 @@
 ---
 title: Linux Kernel - My first patch
 description: In this post i'll share my experience doing my first patch!
-date: 2022-05-21 11:33:00 +0800
 ---
 
 # First Description

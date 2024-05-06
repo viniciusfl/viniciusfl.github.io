@@ -1,12 +1,6 @@
 ---
 title: Linux Kernel - Setting up development environment
 description: In this post i'll share my experience in setting up my environment to contribute to the Linux Kernel
-date: 2022-05-21 11:33:00 +0800
-categories: [Blogging, Free Software]
-tags: [kernel]
-pin: true
-math: true
-mermaid: true
 ---
 
 This series of posts will detail my experience through a course at the University of São Paulo (USP) where our objective is to actively contribute to free software. Our first mission was to make a small contribution to the Linux Kernel!
