@@ -235,4 +235,35 @@ footer {
     td ul {
         padding-left: 1rem;
     }
+}
+
+.reference {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.reference h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.reference p {
+    font-style: italic;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.reference-link {
+    display: inline-block;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.reference-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 } 
