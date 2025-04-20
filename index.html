@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Research Project - User Feedback Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Research Proposal</div>
+            <ul class="nav-links">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#concepts">Concepts</a></li>
+                <li><a href="#methods">Methods</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>User Feedback Analysis Using AI</h1>
+                <p class="subtitle">Bridging the Gap Between Users and Developers</p>
+                <div class="hero-buttons">
+                    <a href="#introduction" class="btn primary">Read Proposal</a>
+                    <a href="https://github.com/viniciusfl" class="btn secondary">GitHub Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="introduction" class="content-section">
+            <h2>Introduction</h2>
+            <div class="content-box">
+                <p>Back in 1750BC, the first documented case of a customer complaint/suggestion was chiselled onto a clay tablet. The customer, Nanni, unimpressed by the service and the copper ore he received from the supplier, Ea-Nasir, made the unprecedented decision to give the business his feedback. We don't know how Ea-Nasir responded but we do know how and why customer feedback has evolved in the past four thousand years, and it's come a long way since the days of carving your complaint into stone!</p>
+                <br>
+                <p>The culture of feedbacks continued all the way from 1750BC until the current days. With the advance of technology and globalization, users are able to provide and give feedback to softwares in many ways, from sending an email to posting a public feedback on the platform. One big example for that is Amazon, who is known for its strong focus on customer feedback. They combine customer reviews and ratings with comments and feedback to improve their products and inform their development and marketing strategies. They also use customer feedback to inform their pricing and inventory management decisions.</p>
+                <br>
+                <p>One way of using the feedback is feeding the developers with useful data, as suggestions and bug complaints. The main problem that we face on the technology and big data is that we don't know which comments are truly useful for the developers to use, and how we could provide that bridge between them.</p>
+                <br>
+                <p>Based of that information, this project aims to investigate the use of embedding models, clusterization algorithms and Natural Language Processing (NLP) and more specifically within text mining or information retrieval, to associate comments and descriptions with issues in versioning platforms, such as Github, in software development systems. The research will seek to evaluate different techniques to identify the most effective ones in representing and matching textual information in programming contexts, with the aim of improving prioritization and problem-solving processes.</p>
+            </div>
+        </section>
+
+        <section id="concepts" class="content-section">
+            <h2>Concepts</h2>
+            <div class="content-box">
+                <h3>Embeddings</h3>
+                <p>Embeddings are a way to represent objects such as text, images, or audio as vectors in a continuous, high-dimensional space. In this space, similar items are located close to one another, allowing machine learning algorithms to understand semantic relationships. For example, similar texts will have similar vector representations and be placed closer together in the space.</p>
+                <br>
+                <h3>Clustering</h3>
+                <p>Clustering is an unsupervised machine learning technique that groups similar data points into clusters based on patterns or features they share. In the context of text, clustering can help identify common topics or group together related comments, making it easier to find patterns or prioritize issues.</p>
+            </div>
+        </section>
+
+        <section id="methods" class="content-section">
+            <h2>Methods</h2>
+            <div class="content-box">
+                <p>The first phase of the project will involve setting up a controlled testing environment or "playground" to experiment with various embedding models, clustering algorithms, and NLP techniques. The goal is to understand how each method behaves and how well it performs in representing and grouping textual data.</p>
+                <br>
+                <p>In the second phase, real-world data—provided by X will be used to validate the initial tests. Some parts of the pipeline may require supervised fine-tuning or hyperparameter optimization, especially in the case of clustering algorithms and NLP models that depend on specific configurations.</p>
+                <br>
+                <p>Finally, all results will be analyzed to produce practical insights and recommendations on which techniques are most effective for extracting meaningful, developer-relevant information from user feedback.</p>
+            </div>
+        </section>
+
+        <section id="schedule" class="content-section">
+            <h2>Schedule</h2>
+            <div class="content-box">
+                <div class="schedule-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Activities</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>May</td>
+                                <td>
+                                    <ul>
+                                        <li>Research and review related literature (NLP, embeddings, clustering)</li>
+                                        <li>Define scope and choose initial tools/technologies</li>
+                                        <li>Set up development environment ("playground")</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>June</td>
+                                <td>
+                                    <ul>
+                                        <li>Implement and test different embedding models (e.g., Word2Vec, BERT)</li>
+                                        <li>Explore preprocessing techniques for text data</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>July, August</td>
+                                <td>
+                                    <ul>
+                                        <li>Apply and compare clustering algorithms (e.g., K-Means, DBSCAN)</li>
+                                        <li>Evaluate combinations of embeddings + clustering</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td>
+                                    <ul>
+                                        <li>Final evaluation of techniques and summarize results</li>
+                                        <li>Start writing the final report</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>October</td>
+                                <td>
+                                    <ul>
+                                        <li>Finish writing and reviewing the TCC</li>
+                                        <li>Prepare presentation or defense materials</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Vinícius Lima. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/viniciusfl"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/vinicius-ferraz-lima/"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:viniciushenrique2301@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+</html> 
