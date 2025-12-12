@@ -6,20 +6,21 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>AI Research Project - User Feedback Analysis</title>
+    <title>A Comparison of Embedding Models in Semantic Similarity Tasks for Software Engineering</title>
     <link rel="stylesheet" href="styles.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Research Proposal</div>
+            <div class="logo">Capstone Project</div>
             <ul class="nav-links">
+                <li><a href="#project-info">Project Info</a></li>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#objectives">Objectives</a></li>
                 <li><a href="#concepts">Concepts</a></li>
                 <li><a href="#methods">Methods</a></li>
-                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#results">Results</a></li>
                 <li><a href="#references">References</a></li>
             </ul>
         </nav>
@@ -28,11 +29,60 @@
     <main>
         <section id="hero">
             <div class="hero-content">
-                <h1>User Feedback Analysis Using AI</h1>
-                <p class="subtitle">Bridging the Gap Between Users and Developers</p>
+                <h1>A Comparison of Embedding Models in Semantic Similarity Tasks for Software Engineering</h1>
+                <p class="subtitle">Capstone Project Report - University of São Paulo, 2025</p>
                 <div class="hero-buttons">
-                    <a href="#introduction" class="btn primary">Read Proposal</a>
+                    <a href="tese.pdf" class="btn primary" download><i class="fas fa-download"></i> Download Thesis</a>
+                    <a href="#introduction" class="btn secondary">Read Abstract</a>
                     <a href="https://github.com/viniciusfl" class="btn secondary">GitHub Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-info" class="content-section">
+            <div class="content-box project-info-box">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3><i class="fas fa-user-graduate"></i> Student</h3>
+                        <p>Vinícius Henrique Ferraz Lima</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fas fa-chalkboard-teacher"></i> Supervisor</h3>
+                        <p>Arthur Pilone Maia da Silva</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fas fa-user-tie"></i> Co-supervisor</h3>
+                        <p>Prof. Paulo Roberto Miranda Meirelles</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fas fa-university"></i> Institution</h3>
+                        <p>University of São Paulo<br>Institute of Mathematics and Statistics<br>Bachelor of Computer Science</p>
+                    </div>
+                </div>
+                
+                <div class="title-section">
+                    <h2><i class="fas fa-book"></i> Title</h2>
+                    <p class="thesis-title">A Comparison of Embedding Models in Semantic Similarity Tasks for Software Engineering</p>
+                </div>
+
+                <div class="abstract-section">
+                    <h2><i class="fas fa-file-alt"></i> Abstract</h2>
+                    <p>Embedding models have been widely used in Natural Language Processing (NLP) tasks to represent texts in vector spaces that capture their semantic relationships. Despite the emergence of different architectures and training techniques, it is presumed that, in certain tasks, these models exhibit similar performance. This work investigates this hypothesis through a systematic comparison of different embedding models applied to semantic textual similarity tasks. From the experiments conducted, we seek to understand whether differences between models used widely in the market are relevant for practical applications. The results contribute to a better understanding of the real impact of choosing embedding models in NLP applications.</p>
+                    <p><strong>Keywords:</strong> Embeddings. Semantic Similarity. Natural Language Processing. Vectorial Representation of Text. Model Evaluation.</p>
+                </div>
+
+                <div class="links-section">
+                    <h2><i class="fas fa-link"></i> Resources</h2>
+                    <div class="resource-links">
+                        <a href="tese.pdf" class="resource-link" download>
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Download Thesis (PDF)</span>
+                        </a>
+                        <a href="https://gitlab.com/ArthurPilone/deepermatcher" class="resource-link" target="_blank">
+                            <i class="fab fa-gitlab"></i>
+                            <span>View Source Code</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -40,104 +90,86 @@
         <section id="introduction" class="content-section">
             <h2>Introduction</h2>
             <div class="content-box">
-                <p>Back in 1750BC, the first documented case of a customer complaint/suggestion was chiselled onto a clay tablet. The customer, Nanni, unimpressed by the service and the copper ore he received from the supplier, Ea-Nasir, made the unprecedented decision to give the business his feedback. We don't know how Ea-Nasir responded but we do know how and why customer feedback has evolved in the past four thousand years, and it's come a long way since the days of carving your complaint into stone!</p>
+                <p>In recent years, advances in Natural Language Processing (NLP) and Artificial Intelligence (AI) have transformed the way researchers and industry professionals analyze, retrieve, and relate textual information. Central to these advances are embedding models, which are mathematical representations that encode the semantic meaning of text into numerical vectors. These representations serve as the backbone of modern retrieval, classification, and generation systems, enabling more semantic driven interpretations of human language than traditional keyword-based or statistical methods.</p>
                 <br>
-                <p>The culture of feedbacks continued all the way from 1750BC until the current days. With the advance of technology and globalization, users are able to provide and give feedback to softwares in many ways, from sending an email to posting a public feedback on the platform. One big example for that is Amazon, who is known for its strong focus on customer feedback. They combine customer reviews and ratings with comments and feedback to improve their products and inform their development and marketing strategies. They also use customer feedback to inform their pricing and inventory management decisions.</p>
+                <p>As embedding models have matured, a growing body of research in software engineering has adopted them to address complex tasks such as duplicate bug report detection, vulnerability discovery, source code analysis, and requirements traceability. These studies consistently demonstrate that embeddings capture semantic and contextual relationships that would be difficult or impossible to model through handcrafted rules or surface-level text matching.</p>
                 <br>
-                <p>One way of using the feedback is feeding the developers with useful data, as suggestions and bug complaints. The main problem that we face on the technology and big data is that we don't know which comments are truly useful for the developers to use, and how we could provide that bridge between them.</p>
+                <p>This work investigates whether the choice of embedding model significantly influences the performance of semantic similarity tasks in software engineering, specifically in the context of matching user reviews with development issues. Through a systematic comparison of five embedding models (Jina, OpenAI Large, OpenAI Small, Gemini, and Cohere) across four software projects, we address the fundamental question: to what extent does the choice of embedding model actually influence the final outcomes of a given task?</p>
             </div>
         </section>
 
         <section id="objectives" class="content-section">
             <h2>Objectives</h2>
             <div class="content-box">
-                <p>Based of that information, this project aims to investigate the use of embedding models, clusterization algorithms and Natural Language Processing (NLP) and more specifically within text mining or information retrieval, to associate comments and descriptions with issues in versioning platforms, such as Github, in software development systems. The research will seek to evaluate different techniques to identify the most effective ones in representing and matching textual information in programming contexts, with the aim of improving prioritization and problem-solving processes.</p>
+                <p>This research project aimed to investigate the use of embedding models in semantic similarity tasks for software engineering, specifically focusing on matching user reviews with development issues. The main objectives were:</p>
+                <ul style="margin-top: 1rem; padding-left: 2rem;">
+                    <li>Compare the performance of five different embedding models (Jina, OpenAI Large, OpenAI Small, Gemini, and Cohere) in semantic textual similarity tasks</li>
+                    <li>Evaluate how these models perform across different software projects and relevance levels</li>
+                    <li>Understand whether differences between widely-used embedding models are relevant for practical applications</li>
+                    <li>Analyze the semantic space organization through visualization techniques (t-SNE)</li>
+                    <li>Provide empirical evidence on model selection for semantic similarity tasks in software engineering</li>
+                </ul>
             </div>
         </section>
 
         <section id="concepts" class="content-section">
             <h2>Concepts</h2>
             <div class="content-box">
-                <h3>Embeddings</h3>
-                <p>Embeddings are a way to represent objects such as text, images, or audio as vectors in a continuous, high-dimensional space. In this space, similar items are located close to one another, allowing machine learning algorithms to understand semantic relationships. For example, similar texts will have similar vector representations and be placed closer together in the space.</p>
+                <h3>Embedding Models</h3>
+                <p>Embedding models are mathematical representations that encode the semantic meaning of text into numerical vectors. These models transform text into dense vector representations in a high-dimensional space where semantically similar texts are located close to one another. This enables machine learning algorithms to understand semantic relationships and perform tasks such as similarity computation, retrieval, and classification.</p>
                 <br>
-                <h3>Clustering</h3>
-                <p>Clustering is an unsupervised machine learning technique that groups similar data points into clusters based on patterns or features they share. In the context of text, clustering can help identify common topics or group together related comments, making it easier to find patterns or prioritize issues.</p>
+                <h3>Semantic Textual Similarity (STS)</h3>
+                <p>Semantic Textual Similarity is a task that measures how semantically similar two pieces of text are, typically on a scale from 0 (completely unrelated) to 1 (semantically equivalent). In software engineering, STS can be used to match user reviews with development issues, identify duplicate bug reports, or find related documentation.</p>
+                <br>
+                <h3>t-SNE Visualization</h3>
+                <p>t-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reduction technique used to visualize high-dimensional data in two or three dimensions. It preserves local neighborhood structures, making it useful for understanding how embedding models organize semantic space and identify clusters of similar texts.</p>
             </div>
         </section>
 
         <section id="methods" class="content-section">
             <h2>Methods</h2>
             <div class="content-box">
-                <p>The first phase of the project will involve setting up a controlled testing environment or "playground" to experiment with various embedding models, clustering algorithms, and NLP techniques. The goal is to understand how each method behaves and how well it performs in representing and grouping textual data.</p>
+                <h3>Dataset</h3>
+                <p>The research utilized real-world data from four software projects: WordPress Android, Mindustry, K9 Mail (fsck_k9), and PPSSPP. The dataset consisted of user reviews and development issues that were matched and evaluated by human annotators.</p>
                 <br>
-                <p>In the second phase, real-world data—provided by X will be used to validate the initial tests. Some parts of the pipeline may require supervised fine-tuning or hyperparameter optimization, especially in the case of clustering algorithms and NLP models that depend on specific configurations.</p>
+                <h3>Embedding Models</h3>
+                <p>Five embedding models were systematically compared:</p>
+                <ul style="margin-top: 0.5rem; padding-left: 2rem;">
+                    <li><strong>Jina:</strong> A general-purpose embedding model</li>
+                    <li><strong>OpenAI Large:</strong> OpenAI's larger embedding model</li>
+                    <li><strong>OpenAI Small:</strong> OpenAI's smaller, more efficient embedding model</li>
+                    <li><strong>Gemini:</strong> Google's Gemini embedding model</li>
+                    <li><strong>Cohere:</strong> Cohere's embedding model</li>
+                </ul>
                 <br>
-                <p>Finally, all results will be analyzed to produce practical insights and recommendations on which techniques are most effective for extracting meaningful, developer-relevant information from user feedback.</p>
+                <h3>Similarity Computation</h3>
+                <p>Similarity scores were computed using cosine similarity between embedding vectors of issue-review pairs. The results were compared against human-assigned relevance levels (0-5) to evaluate model performance.</p>
+                <br>
+                <h3>Visualization</h3>
+                <p>t-SNE was used to visualize the semantic space organization, revealing how different models structure the relationships between issues and reviews in the embedding space.</p>
             </div>
         </section>
 
-        <section id="schedule" class="content-section">
-            <h2>Schedule</h2>
+        <section id="results" class="content-section">
+            <h2>Main Findings</h2>
             <div class="content-box">
-                <div class="schedule-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Month</th>
-                                <th>Activities</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>May</td>
-                                <td>
-                                    <ul>
-                                        <li>Research and review related literature (NLP, embeddings, clustering)</li>
-                                        <li>Define scope and choose initial tools/technologies</li>
-                                        <li>Set up development environment ("playground")</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>June</td>
-                                <td>
-                                    <ul>
-                                        <li>Implement and test different embedding models (e.g., Word2Vec, BERT)</li>
-                                        <li>Explore preprocessing techniques for text data</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>July, August</td>
-                                <td>
-                                    <ul>
-                                        <li>Apply and compare clustering algorithms (e.g., K-Means, DBSCAN)</li>
-                                        <li>Evaluate combinations of embeddings + clustering</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>September</td>
-                                <td>
-                                    <ul>
-                                        <li>Final evaluation of techniques and summarize results</li>
-                                        <li>Start writing the final report</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>October</td>
-                                <td>
-                                    <ul>
-                                        <li>Finish writing and reviewing the TCC</li>
-                                        <li>Prepare presentation or defense materials</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <h3>Key Results</h3>
+                <p>Our analysis reveals a nuanced answer: while embedding models show remarkable convergence at the extremes of the relevance spectrum, they exhibit meaningful differences at intermediate levels and in overall similarity score distributions.</p>
+                <br>
+                <h3>Convergence at Extremes</h3>
+                <p>At the extremes—clearly irrelevant pairs (Level 0) and highly relevant pairs (Level 5)—all five models produce comparable results. This convergence suggests that when semantic relationships are unambiguous, different embedding models capture similar patterns.</p>
+                <br>
+                <h3>Differences at Intermediate Levels</h3>
+                <p>At intermediate relevance levels (Levels 2-3), significant differences emerge. Jina and OpenAI Large consistently assign higher similarity scores to moderately relevant pairs, while Gemini and Cohere tend to be more conservative, requiring stronger semantic signals before assigning positive similarity scores.</p>
+                <br>
+                <h3>Model Performance Patterns</h3>
+                <p>Across all projects, Gemini and Jina consistently outperform other models in terms of both median similarity scores and consistency. Cohere shows a more conservative approach that may reduce false positives but potentially increase false negatives.</p>
+                <br>
+                <h3>Semantic Space Organization</h3>
+                <p>t-SNE visualizations confirm that all models successfully separate issues and reviews into distinct clusters. OpenAI models produce more compact, well-defined clusters, while Jina and Cohere show more diffuse distributions.</p>
+                <br>
+                <h3>Practical Implications</h3>
+                <p>The findings suggest that model selection matters most when dealing with ambiguous or borderline cases. For strongly relevant or clearly irrelevant pairs, the choice of embedding model appears to have less impact. Practitioners should carefully consider their tolerance for false positives and false negatives when selecting an embedding model.</p>
             </div>
         </section>
 
@@ -145,13 +177,25 @@
             <h2>References</h2>
             <div class="content-box">
                 <div class="reference">
-                    <p>[1] Häring, M.; Stanik, C.; Maalej, W. (2021). Automatically Matching Bug Reports With Related App Reviews.</p>
-                    <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210207134H/abstract" class="reference-link" target="_blank">View Abstract</a>
+                    <p>[1] Jurafsky, D.; Martin, J. H. (2023). Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition (3rd ed.). Pearson.</p>
+                    <a href="https://web.stanford.edu/~jurafsky/slp3/" class="reference-link" target="_blank">View Book</a>
                 </div>
 
                 <div class="reference">
-                    <p>[2] Jurafsky, Dan; Martin, James H. (2021). Speech and Language Processing (3rd ed.).</p>
-                    <a href="https://web.stanford.edu/~jurafsky/slp3/" class="reference-link" target="_blank">View Book</a>
+                    <p>[2] Pilone, A.; Raglianti, M.; Lanza, M.; Kon, F.; Meirelles, P. (2025). "Automatically augmenting GitHub issues with informative user reviews". In: 2025 IEEE International Conference on Software Maintenance and Evolution (ICSME).</p>
+                </div>
+
+                <div class="reference">
+                    <p>[3] Li, J.; Li, M.; Liu, Y.; Zhang, L.; Wang, Y. (2024). "HYDBre: a hybrid retrieval method for detecting duplicate software bug reports". In: Proceedings of the 2024 IEEE International Conference on Software Maintenance and Evolution, pp. 1-12.</p>
+                    <a href="https://ieeexplore.ieee.org/document/10818310/" class="reference-link" target="_blank">View Paper</a>
+                </div>
+
+                <div class="reference">
+                    <p>[4] Vaswani, A. et al. (2017). "Attention is all you need". Advances in Neural Information Processing Systems 30.</p>
+                </div>
+
+                <div class="reference">
+                    <p>[5] Tripathy, B. K.; Anveshrithaa, S.; Ghela, S. (2021). "T-distributed stochastic neighbor embedding (t-sne)". In: Data Science and Innovations for Intelligent Systems. CRC Press, p. 13.</p>
                 </div>
             </div>
         </section>
@@ -159,7 +203,8 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Vinícius Henrique Ferraz Lima. All rights reserved.</p>
+            <p>&copy; 2025 Vinícius Henrique Ferraz Lima. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">This work is published under the CC BY 4.0 license (Creative Commons Attribution 4.0 International License)</p>
             <div class="social-links">
                 <a href="https://github.com/viniciusfl"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/vinicius-ferraz-lima/"><i class="fab fa-linkedin"></i></a>

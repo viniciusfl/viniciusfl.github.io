@@ -121,6 +121,10 @@ nav {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+.btn i {
+    margin-right: 0.5rem;
+}
+
 .content-section {
     padding: 3rem 2rem;
     max-width: 1200px;
@@ -266,4 +270,179 @@ footer {
 .reference-link:hover {
     color: var(--primary-color);
     text-decoration: underline;
+}
+
+/* Project Information Section */
+.project-info-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 2px solid var(--border-color);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    padding: 1rem;
+    background-color: var(--content-background);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.info-item h3 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-item h3 i {
+    color: var(--secondary-color);
+}
+
+.info-item p {
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.title-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--content-background);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.title-section h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.title-section h2 i {
+    color: var(--accent-color);
+}
+
+.thesis-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+}
+
+.abstract-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--content-background);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.abstract-section h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.abstract-section h2 i {
+    color: var(--secondary-color);
+}
+
+.abstract-section p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.abstract-section p:last-child {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.links-section {
+    margin: 2rem 0 0;
+    padding: 1.5rem;
+    background-color: var(--content-background);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.links-section h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.links-section h2 i {
+    color: var(--accent-color);
+}
+
+.resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.resource-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.resource-link:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.resource-link i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .resource-links {
+        flex-direction: column;
+    }
+    
+    .resource-link {
+        justify-content: center;
+    }
+    
+    .thesis-title {
+        font-size: 1rem;
+    }
 } 
