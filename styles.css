@@ -85,6 +85,35 @@ nav {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
+.hero-meta {
+    margin-bottom: 2rem;
+}
+
+.hero-author {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.hero-supervisor {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.hero-author i,
+.hero-supervisor i {
+    opacity: 0.8;
+}
+
 .subtitle {
     font-size: 1.5rem;
     opacity: 0.9;
@@ -224,6 +253,14 @@ footer {
         font-size: 2rem;
     }
     
+    .hero-author {
+        font-size: 1.1rem;
+    }
+    
+    .hero-supervisor {
+        font-size: 1rem;
+    }
+    
     .subtitle {
         font-size: 1.2rem;
     }
@@ -351,30 +388,22 @@ footer {
     border-left: 4px solid var(--secondary-color);
 }
 
-.abstract-section h2 {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-align: left;
+/* Standalone abstract section (when not inside project-info-box) */
+#abstract.content-section .content-box {
+    border-left: 4px solid var(--secondary-color);
+    padding: 2rem;
 }
 
-.abstract-section h2 i {
-    color: var(--secondary-color);
-}
-
-.abstract-section p {
+#abstract.content-section .content-box p {
     text-align: justify;
     line-height: 1.8;
     margin-bottom: 1rem;
 }
 
-.abstract-section p:last-child {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border-color);
+#abstract.content-section .content-box p:last-child {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--border-color);
 }
 
 .links-section {
